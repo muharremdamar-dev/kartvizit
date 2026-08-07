@@ -1,74 +1,171 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modern Otomasyon</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Modern Otomasyon</title>
+    <meta name="description" content="Modern Otomasyon - Dolum Makinaları ve Endüstriyel Otomasyon Sistemleri">
+    <meta name="theme-color" content="#000000">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="lightbox.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
-<div class="background-animation"></div>
+<header>
 
-<header class="hero">
-  <img src="logo.png" class="logo" alt="Modern Otomasyon Logo">
-  <h1>MODERN OTOMASYON</h1>
-  <p class="subtitle">Muharrem Damar</p>
-  <p class="desc">
-    Endüstriyel otomasyon, PLC yazılımı, HMI tasarımı, servo sistemleri ve özel pano çözümleri.
-  </p>
+<div class="logo">
 
-  <div class="buttons">
-    <a href="tel:+905388191421" class="btn call">📞 Ara</a>
-    <a href="https://wa.me/905388191421" class="btn whatsapp">💬 WhatsApp</a>
-    <a href="mailto:muharremdamar@gmail.com" class="btn mail">✉️ E-posta</a>
-    <a href="https://maps.google.com/?q=Ümraniye İstanbul" class="btn map">📍 Konum</a>
-  </div>
+<img src="assets/logo.png" alt="Modern Otomasyon">
+
+</div>
+
+<nav>
+
+<a href="#about">Hakkımızda</a>
+<a href="#gallery">Galeri</a>
+<a href="#contact">İletişim</a>
+
+</nav>
+
 </header>
 
-<section class="services">
-  <h2>Hizmetlerimiz</h2>
-  <div class="service-grid">
-    <div class="card">⚙️ PLC Programlama</div>
-    <div class="card">🖥️ HMI & SCADA</div>
-    <div class="card">⚡ Servo Sistemleri</div>
-    <div class="card">🛠️ Özel Pano İmalatı</div>
-  </div>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>MODERN OTOMASYON</h1>
+
+<p>
+Dolum Makinaları<br>
+Endüstriyel Otomasyon Sistemleri
+</p>
+
+<div class="hero-buttons">
+
+<a href="tel:+905551112233" class="btn">
+📞 Ara
+</a>
+
+<a href="https://wa.me/905551112233" class="btn">
+WhatsApp
+</a>
+
+<a href="vcard.vcf" download class="btn">
+Kartviziti Kaydet
+</a>
+
+</div>
+
+</div>
+
 </section>
 
-<section class="gallery-section">
-  <h2>📸 Tamamlanan Projeler</h2>
 
-  <div class="slider">
-    <button class="nav prev"><</button>
+<section id="about">
 
-    <div class="slides">
-      <img src="images/panel1.jpg" class="slide active" alt="Panel 1">
-      <img src="images/panel2.jpg" class="slide" alt="Panel 2">
-      <img src="images/panel3.jpg" class="slide" alt="Panel 3">
-      <img src="images/panel4.jpg" class="slide" alt="Panel 4">
-      <img src="images/panel5.jpg" class="slide" alt="Panel 5">
-      <img src="images/panel6.jpg" class="slide" alt="Panel 6">
-    </div>
+<h2>Hakkımızda</h2>
 
-    <button class="nav next">></button>
-  </div>
+<p>
 
-  <p class="gallery-caption">
-    PLC kontrol panoları, servo sürücü sistemleri, HMI operatör panelleri ve özel otomasyon çözümlerinden örnekler.
-  </p>
+Modern Otomasyon;
+
+✔ Otomatik Dolum Makinaları
+
+✔ Servo Dolum Sistemleri
+
+✔ Etiketleme Makinaları
+
+✔ Kapak Kapatma Sistemleri
+
+✔ PLC Otomasyon
+
+✔ Özel Makine İmalatı
+
+alanlarında faaliyet göstermektedir.
+
+</p>
+
 </section>
 
-<section class="save-contact">
-  <a href="muharrem.vcf" download class="save-btn">
-    📇 Kartvizitinizi Kaydedin
-  </a>
+
+<section id="gallery">
+
+<h2>Projelerimiz</h2>
+
+<div class="gallery">
+
+<img src="assets/pano1.jpg" onclick="openLightbox(this)">
+<img src="assets/pano2.jpg" onclick="openLightbox(this)">
+<img src="assets/pano3.jpg" onclick="openLightbox(this)">
+<img src="assets/pano4.jpg" onclick="openLightbox(this)">
+<img src="assets/pano5.jpg" onclick="openLightbox(this)">
+
+</div>
+
 </section>
+
+
+<section id="contact">
+
+<h2>İletişim</h2>
+
+<div class="contact-grid">
+
+<a href="tel:+905551112233">
+📞 Telefon
+</a>
+
+<a href="mailto:info@modernmakina.com">
+✉ Mail
+</a>
+
+<a href="https://wa.me/905551112233">
+WhatsApp
+</a>
+
+<a href="https://maps.google.com">
+Konum
+</a>
+
+</div>
+
+</section>
+
+
 
 <footer>
-  <p>© 2026 Modern Otomasyon • Ümraniye / İstanbul</p>
+
+© 2026 Modern Otomasyon
+
 </footer>
 
+
+
+<div id="lightbox">
+
+<span onclick="closeLightbox()">&times;</span>
+
+<img id="lightbox-image">
+
+</div>
+
+
+
+<script src="gallery.js"></script>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
