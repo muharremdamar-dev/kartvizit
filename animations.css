@@ -1,0 +1,360 @@
+/* ===================================================
+   MODERN OTOMASYON
+   animations.css
+=================================================== */
+
+/* Sayfa açılışı */
+
+body{
+    animation:pageFade 1s ease;
+}
+
+@keyframes pageFade{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+/* Hero */
+
+.hero-content{
+
+    animation:heroAnimation 1.2s ease;
+
+}
+
+@keyframes heroAnimation{
+
+    0%{
+
+        opacity:0;
+
+        transform:translateY(60px);
+
+    }
+
+    100%{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Başlıklar */
+
+h2{
+
+    animation:titleAnimation 1s ease;
+
+}
+
+@keyframes titleAnimation{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Butonlar */
+
+.btn{
+
+    animation:buttonFade 1.3s ease;
+
+}
+
+@keyframes buttonFade{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.85);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* Galeri */
+
+.gallery img{
+
+    animation:imageAnimation .8s ease both;
+
+}
+
+.gallery img:nth-child(1){
+
+animation-delay:.1s;
+
+}
+
+.gallery img:nth-child(2){
+
+animation-delay:.2s;
+
+}
+
+.gallery img:nth-child(3){
+
+animation-delay:.3s;
+
+}
+
+.gallery img:nth-child(4){
+
+animation-delay:.4s;
+
+}
+
+.gallery img:nth-child(5){
+
+animation-delay:.5s;
+
+}
+
+@keyframes imageAnimation{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Kartlar */
+
+.contact-grid a{
+
+    animation:cardAnimation .8s ease both;
+
+}
+
+.contact-grid a:nth-child(1){
+
+animation-delay:.15s;
+
+}
+
+.contact-grid a:nth-child(2){
+
+animation-delay:.30s;
+
+}
+
+.contact-grid a:nth-child(3){
+
+animation-delay:.45s;
+
+}
+
+.contact-grid a:nth-child(4){
+
+animation-delay:.60s;
+
+}
+
+@keyframes cardAnimation{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Hover */
+
+.btn:hover{
+
+    animation:pulse .5s;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.05);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* Float */
+
+.float{
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Blur */
+
+.blur-show{
+
+    animation:blurShow .8s ease;
+
+}
+
+@keyframes blurShow{
+
+    from{
+
+        opacity:0;
+
+        filter:blur(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        filter:blur(0);
+
+    }
+
+}
+
+/* Zoom */
+
+.zoom{
+
+    animation:zoom .7s ease;
+
+}
+
+@keyframes zoom{
+
+    from{
+
+        transform:scale(.9);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+/* Döndür */
+
+.rotate{
+
+    animation:rotate 20s linear infinite;
+
+}
+
+@keyframes rotate{
+
+    from{
+
+        transform:rotate(0);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
