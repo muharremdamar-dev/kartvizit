@@ -1,0 +1,178 @@
+/* ===================================================
+   MODERN OTOMASYON
+   lightbox.css
+=================================================== */
+
+#lightbox{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    display:none;
+
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(0,0,0,.88);
+
+    backdrop-filter:blur(14px);
+
+    z-index:99999;
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+#lightbox.active{
+
+    display:flex;
+
+    opacity:1;
+
+}
+
+#lightbox-image{
+
+    max-width:92%;
+
+    max-height:90%;
+
+    border-radius:22px;
+
+    box-shadow:
+    0 30px 80px rgba(0,0,0,.55);
+
+    animation:lightboxZoom .35s ease;
+
+    object-fit:contain;
+
+}
+
+@keyframes lightboxZoom{
+
+    from{
+
+        transform:scale(.8);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+#lightbox span{
+
+    position:absolute;
+
+    top:25px;
+
+    right:35px;
+
+    font-size:52px;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    user-select:none;
+
+}
+
+#lightbox span:hover{
+
+    transform:rotate(90deg) scale(1.1);
+
+    color:#0071e3;
+
+}
+
+#lightbox::after{
+
+    content:"Görseli kapatmak için boş alana tıklayın";
+
+    position:absolute;
+
+    bottom:30px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    color:#ffffffcc;
+
+    font-size:15px;
+
+    letter-spacing:.5px;
+
+}
+
+#lightbox img{
+
+    cursor:zoom-out;
+
+}
+
+.gallery img{
+
+    cursor:zoom-in;
+
+}
+
+.gallery img:hover{
+
+    filter:brightness(1.04);
+
+}
+
+@media(max-width:768px){
+
+#lightbox-image{
+
+max-width:96%;
+
+max-height:82%;
+
+border-radius:14px;
+
+}
+
+#lightbox span{
+
+top:15px;
+
+right:20px;
+
+font-size:42px;
+
+}
+
+#lightbox::after{
+
+font-size:13px;
+
+bottom:18px;
+
+padding:0 20px;
+
+text-align:center;
+
+}
+
+}
