@@ -1,53 +1,74 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Modern Otomasyon | Dijital Kartvizit</title>
-<style>
-body{margin:0;font-family:Arial,sans-serif;background:#0b1f3a;color:#fff;display:flex;justify-content:center}
-.card{max-width:430px;width:100%;margin:20px;background:linear-gradient(180deg,#13345f,#0b1f3a);border-radius:22px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.4)}
-.header{text-align:center;padding:35px 20px}
-.logo{width:110px;border-radius:16px;background:#fff;padding:8px}
-h1{margin:15px 0 5px;font-size:30px}
-h2{margin:0;color:#8fd0ff;font-size:22px}
-p{color:#d8e7ff;line-height:1.5}
-.buttons{padding:0 20px;display:grid;gap:12px}
-.btn{display:block;text-decoration:none;color:#fff;padding:14px;border-radius:12px;text-align:center;font-weight:bold}
-.call{background:#1e88e5}.wa{background:#25D366}.mail{background:#ef5350}.map{background:#546e7a}
-.section{padding:20px}
-ul{padding-left:18px}
-.save{display:block;margin:25px 20px;background:#fff;color:#0b1f3a;text-decoration:none;text-align:center;padding:16px;border-radius:14px;font-weight:bold}
-.footer{text-align:center;padding:20px;color:#9fc3ea;font-size:13px}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Otomasyon</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-<div class="card">
-<div class="header">
-<img class="logo" src="logo.png" alt="Logo">
-<h1>MODERN OTOMASYON</h1>
-<h2>Muharrem Damar</h2>
-<p>Endüstriyel otomasyon, PLC yazılımı, HMI tasarımı, makine elektriği ve özel otomasyon çözümleri.</p>
-</div>
-<div class="buttons">
-<a class="btn call" href="tel:+905388191421">📞 Ara</a>
-<a class="btn wa" href="https://wa.me/905388191421">💬 WhatsApp</a>
-<a class="btn mail" href="mailto:muharremdamar@gmail.com">✉️ E‑posta</a>
-<a class="btn map" href="https://maps.google.com/?q=Ümraniye İstanbul">📍 Ümraniye / İstanbul</a>
-</div>
-<div class="section">
-<h3>Hizmetler</h3>
-<ul>
-<li>PLC Programlama</li>
-<li>HMI / SCADA</li>
-<li>Servo ve Motion Kontrol</li>
-<li>Makine Elektrik Panosu</li>
-<li>Endüstriyel Otomasyon</li>
-<li>Devreye Alma ve Teknik Destek</li>
-</ul>
-</div>
-<a class="save" href="kartvizit.vcf" download>📇 Kartvizitinizi Kaydedin</a>
-<div class="footer">© Modern Otomasyon</div>
-</div>
+
+<div class="background-animation"></div>
+
+<header class="hero">
+  <img src="logo.png" class="logo" alt="Modern Otomasyon Logo">
+  <h1>MODERN OTOMASYON</h1>
+  <p class="subtitle">Muharrem Damar</p>
+  <p class="desc">
+    Endüstriyel otomasyon, PLC yazılımı, HMI tasarımı, servo sistemleri ve özel pano çözümleri.
+  </p>
+
+  <div class="buttons">
+    <a href="tel:+905388191421" class="btn call">📞 Ara</a>
+    <a href="https://wa.me/905388191421" class="btn whatsapp">💬 WhatsApp</a>
+    <a href="mailto:muharremdamar@gmail.com" class="btn mail">✉️ E-posta</a>
+    <a href="https://maps.google.com/?q=Ümraniye İstanbul" class="btn map">📍 Konum</a>
+  </div>
+</header>
+
+<section class="services">
+  <h2>Hizmetlerimiz</h2>
+  <div class="service-grid">
+    <div class="card">⚙️ PLC Programlama</div>
+    <div class="card">🖥️ HMI & SCADA</div>
+    <div class="card">⚡ Servo Sistemleri</div>
+    <div class="card">🛠️ Özel Pano İmalatı</div>
+  </div>
+</section>
+
+<section class="gallery-section">
+  <h2>📸 Tamamlanan Projeler</h2>
+
+  <div class="slider">
+    <button class="nav prev"><</button>
+
+    <div class="slides">
+      <img src="images/panel1.jpg" class="slide active" alt="Panel 1">
+      <img src="images/panel2.jpg" class="slide" alt="Panel 2">
+      <img src="images/panel3.jpg" class="slide" alt="Panel 3">
+      <img src="images/panel4.jpg" class="slide" alt="Panel 4">
+      <img src="images/panel5.jpg" class="slide" alt="Panel 5">
+      <img src="images/panel6.jpg" class="slide" alt="Panel 6">
+    </div>
+
+    <button class="nav next">></button>
+  </div>
+
+  <p class="gallery-caption">
+    PLC kontrol panoları, servo sürücü sistemleri, HMI operatör panelleri ve özel otomasyon çözümlerinden örnekler.
+  </p>
+</section>
+
+<section class="save-contact">
+  <a href="muharrem.vcf" download class="save-btn">
+    📇 Kartvizitinizi Kaydedin
+  </a>
+</section>
+
+<footer>
+  <p>© 2026 Modern Otomasyon • Ümraniye / İstanbul</p>
+</footer>
+
 </body>
 </html>
